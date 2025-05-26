@@ -658,9 +658,42 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+    .logo {
+        width: 60vw;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .container {
+        padding: 0 10px;
+    }
     .hero {
-        padding: 80px 5%;
-        min-height: 800px;
+        padding: 100px 5%;
+        background-image: url('images/hero.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(255, 255, 255, 0.3);
+        background-blend-mode: overlay;
+        min-height: 600px;
+        display: flex;
+        align-items: center;
+    }
+    .hero .container {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        z-index: 1;
+    }
+    .hero-text {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
 
     .hero-text h2 {
@@ -702,7 +735,7 @@ footer {
     }
 
     .servicos p {
-    font-size: .9rem;
+    font-size: 1.2rem;
 }
 
     .card img {
